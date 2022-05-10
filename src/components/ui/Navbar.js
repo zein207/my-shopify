@@ -16,7 +16,7 @@ export const Navbar = () => {
           <img className='navbar__brand-bars hide-d' src='images/bars-solid.svg'></img>
         </div>
 
-        <nav className='navbar__collapse'>
+        <nav className='navbar__collapse pl-center'>
 
           <ul className='navbar__list'>
 

@@ -5,4 +5,15 @@
     background-size: cover;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+        font-size: 53px;
+        line-height: 68px;
+        color: $c-white;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
 }

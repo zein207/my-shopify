@@ -9,6 +9,7 @@ header {
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     &__brand {
@@ -16,6 +17,7 @@ header {
         padding: 25px 36px;
         height: 100vh;
         border-right: 2px solid $c-white;
+        position: absolute;
 
         .logo__wrapper {
             display: flex;
@@ -30,7 +32,6 @@ header {
     &__list {
         display: flex;
         padding: 44px 0;
-        margin-left: 55px;
     }
 
     &__link {

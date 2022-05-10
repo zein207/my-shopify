@@ -61,6 +61,10 @@ button {
     margin-left: 30px;
 }
 
+.pl-center {
+    padding-left: 175px;
+}
+
 .pl-5 {
     padding-left: 25px;
 }
@@ -79,6 +83,70 @@ button {
 
 .main-container {
     position: relative;
+}
+
+.btn {
+    border-radius: 26.5px;
+    border: 1px solid $c-white;
+    padding: 15px 59px 15px 30px;
+    color: $c-white;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 13px;
+    max-width: 269px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../../public/images/path.svg');
+        width: 25px;
+        background-size: contain;
+        height: 9px;
+        top: 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 28px;
+        filter: invert(1);
+
+        transition-property: filter;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $c-white;
+        top: 0;
+        left: -100%;
+        z-index: -1;
+
+        transition-property: left;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    &:hover {
+        color: #787878;
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            filter: none;
+        }
+    }
+
 }
 
 @media screen and (min-width:1024px) {

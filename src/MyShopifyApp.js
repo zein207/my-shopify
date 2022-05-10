@@ -1,7 +1,18 @@
+import { HomeScreen } from "./components/pages/HomeScreen";
+import { Footer } from "./components/ui/Footer";
+import { Navbar } from "./components/ui/Navbar";
 
 function MyShopifyApp() {
   return (
-    <h1>Las mejores raquetas para jugar Tennis</h1>
+    <div className="main-container">
+
+      <Navbar />
+
+      <HomeScreen />
+
+      <Footer />
+
+    </div>
   );
 }
 

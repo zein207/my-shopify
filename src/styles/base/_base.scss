@@ -76,3 +76,13 @@ button {
 .pointer {
     cursor: pointer;
 }
+
+.main-container {
+    position: relative;
+}
+
+@media screen and (min-width:1024px) {
+    .hide-d {
+        display: none;
+    }
+}

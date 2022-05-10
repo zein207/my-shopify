@@ -1,0 +1,90 @@
+header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__brand {
+
+        padding: 25px 36px;
+        height: 100vh;
+        border-right: 2px solid $c-white;
+
+        .logo__wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__collapse {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        padding: 44px 0;
+        margin-left: 55px;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: normal;
+        padding: 5px 0;
+        margin-right: 55px;
+        letter-spacing: 1.5px;
+        color: $c-white;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 0px;
+            background-color: $c-white;
+            bottom: -8px;
+            left: 0;
+            
+            transition-property: width;
+            transition-duration: 0.4s;
+            transition-timing-function: ease;
+            
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &--active {
+
+            font-weight: bold;
+
+            &::after {
+                width: 17px;
+            }
+        }
+    }
+
+    &__language {
+        display: flex;
+        padding: 44px 80px 44px;
+
+        &__item {
+            margin: 0 10px;
+            cursor: pointer;
+            color: $c-light-gray;
+            letter-spacing: 1.14px;
+            
+            &--active{
+                color: $c-white;
+            }
+        }
+    }
+
+}

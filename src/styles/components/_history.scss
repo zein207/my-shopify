@@ -1,0 +1,45 @@
+
+.history {
+
+    &__wrapper {
+
+        background-color: #f3f4f8;
+        display: flex;
+        justify-content: center;
+        padding: 72px 0 67px 100px;
+
+        h3 {
+            font-size: 50px;
+            line-height: 57px;
+            color: #1e2335;
+            font-weight: normal;
+        }
+
+        h5 {
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1.87px;
+            text-transform: uppercase;
+            height: fit-content;
+            padding: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 0.51px;
+            color: #787878;
+            line-height: 32px;
+            margin-top: 40px;
+        }
+
+        .btn-invert {
+            align-self: flex-end;
+        }
+    }
+
+    &__text-container {
+        margin: 0 45px;
+    }
+
+}

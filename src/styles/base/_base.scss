@@ -147,6 +147,29 @@ button {
         }
     }
 
+    &-invert {
+        color: #282e47;
+        border-color: #282e47;
+        max-height: 47px;
+        min-width: 234px;
+
+        &:hover {
+            color: $c-white;
+
+            &::after {
+                filter: invert(1);
+            }
+        }
+
+        &::before {
+            background-color: #282e47;
+        }
+
+        &::after {
+            filter: none;
+        }
+    }
+
 }
 
 @media screen and (min-width:1024px) {

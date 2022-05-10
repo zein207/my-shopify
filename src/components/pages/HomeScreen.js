@@ -1,6 +1,7 @@
 import React from 'react'
 import { History } from '../ui/History'
 import { MainCover } from '../ui/MainCover'
+import { SingleBanner } from '../ui/SingleBanner'
 
 export const HomeScreen = () => {
   return (
@@ -9,6 +10,8 @@ export const HomeScreen = () => {
       <MainCover />
 
       <History />
+
+      <SingleBanner />
 
     </div>
   )

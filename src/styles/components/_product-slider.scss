@@ -1,0 +1,34 @@
+
+.product-slider__wrapper {
+    display: flex;
+    overflow: hidden;
+
+    .splide__track {
+        cursor: grab;
+    }
+
+}
+
+.product-item {
+    position: relative;
+    
+    &__index {
+        position: absolute;
+        width: 39px;
+        height: 39px;
+        line-height: 39px;
+        background-color: $c-primary;
+        border-radius: 30px;
+        color: $c-white;
+        text-align: center;
+        top: 11px;
+        left: 17px;
+    }
+}
+
+.product-slider {
+    display: flex;
+    align-items: center;
+    padding-left: 52px;
+    width: 70%;
+}

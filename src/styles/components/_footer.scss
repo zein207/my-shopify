@@ -11,14 +11,6 @@
         .logo__img {
             width: 55px;
             height: 55px;
-    
-            transition-property: transform;
-            transition-duration: 0.4s;
-            transition-timing-function: ease;
-    
-            &:hover {
-                transform: rotate(360deg);
-            }
         }
     }
 

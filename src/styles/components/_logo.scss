@@ -1,0 +1,11 @@
+
+.logo__img {
+
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

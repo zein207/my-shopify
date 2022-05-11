@@ -12,7 +12,14 @@ export const ProductSlider = () => {
         pagination: false,
         autoplay: true,
         rewind: true,
-        gap: '36px'
+        gap: '36px',
+        breakpoints: {
+
+            768: {
+                perPage: 1,
+                gap: '0px'
+            }
+        }
     }
 
   return (

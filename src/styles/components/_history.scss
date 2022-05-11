@@ -50,6 +50,21 @@
 
         &__wrapper {
             flex-direction: column;
+            padding: 72px 20px 67px 20px;
+
+            .btn-invert {
+                align-self: unset;
+                margin: 35px 45px;
+            }
+
+            h5 {
+                padding: 30px 15px;
+                text-align: center;
+            }
+        }
+
+        &__text-container {
+            text-align: center;
         }
     }
 }

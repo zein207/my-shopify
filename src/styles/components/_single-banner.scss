@@ -10,3 +10,14 @@
         object-fit: cover;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .s-banner {
+
+        &__img {
+            min-height: 380px;
+            object-position: left;
+        }
+    }
+}

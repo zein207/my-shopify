@@ -66,6 +66,28 @@
 
         &__wrapper {
             flex-direction: column;
+            padding: 64px 15px 58px;
+        }
+
+        &__link {
+            margin: 0 7px;
+            border-right:1px solid #2b3049;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+        
+        &__social-container {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        &__social-link {
+            margin-right: 17px;
+        }
+
+        &__social-img {
+            width: 40px;
+            height: 40px;
         }
     }
 }

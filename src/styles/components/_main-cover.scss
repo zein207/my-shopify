@@ -17,3 +17,13 @@
         margin-bottom: 40px;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .main-cover {
+        padding: 0 35px;
+        align-items: center;
+        text-align: center;
+        background-position: bottom;
+    }
+}

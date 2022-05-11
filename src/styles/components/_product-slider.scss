@@ -37,6 +37,19 @@
     
     .product-slider__wrapper {
         flex-direction: column;
- 
+    }
+
+    .product-slider {
+        width: 100%;
+        padding: 45px 15px;
+    }
+
+    .product-item {
+
+        text-align: center;
+
+        &__index {
+            left: 65px;
+        }
     }
 }

@@ -121,3 +121,10 @@
         }
     }
 }
+
+@media screen and (max-width: 540px) {
+
+    .banner-slider__wrapper {
+        max-width: 100%;
+    }
+}

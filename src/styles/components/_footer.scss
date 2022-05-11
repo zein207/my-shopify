@@ -69,8 +69,12 @@
             padding: 64px 15px 58px;
         }
 
+        &__menu-list li{
+            margin: 7px 0;
+        }
+
         &__link {
-            margin: 0 7px;
+            margin: 5px 7px;
             border-right:1px solid #2b3049;
             padding-right: 10px;
             white-space: nowrap;
@@ -82,12 +86,18 @@
         }
 
         &__social-link {
-            margin-right: 17px;
+            margin: 0 10px;
         }
 
         &__social-img {
             width: 40px;
             height: 40px;
         }
+    }
+
+    .footer__menu-list, .footer__social-container {
+
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

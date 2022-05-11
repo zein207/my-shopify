@@ -3,6 +3,11 @@ import { Logo } from './Logo'
 
 export const Navbar = () => {
 
+  const toggleMenu = () => {
+
+    document.querySelector('.navbar__collapse').classList.toggle('navbar__collapse--active')
+  };
+
   return (
     <header>
 
@@ -11,9 +16,8 @@ export const Navbar = () => {
         <div className='navbar__brand'>
           <div className='navbar__logo-wrapper'>
             <Logo />
-            <h2 className='navbar__brand-name hide-d'>Tennis</h2>
           </div>
-          <img className='navbar__brand-bars hide-d' src='images/bars-solid.svg'></img>
+          <img className='navbar__brand-bars hide-d' src='images/bars-solid.svg' onClick={ toggleMenu }></img>
         </div>
 
         <nav className='navbar__collapse pl-center'>
@@ -37,6 +41,8 @@ export const Navbar = () => {
             </li>
 
           </ul>
+
+          <img className='navbar__xmark hide-d' src='images/xmark.svg' onClick={ toggleMenu }></img>
 
         </nav>
 

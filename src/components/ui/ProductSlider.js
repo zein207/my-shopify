@@ -15,7 +15,11 @@ export const ProductSlider = () => {
         gap: '36px',
         breakpoints: {
 
-            768: {
+            1024: {
+                perPage: 2
+            },
+
+            767: {
                 perPage: 1,
                 gap: '0px'
             }
